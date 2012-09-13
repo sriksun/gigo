@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.apache.gigo</groupId>
+        <artifactId>metric-store</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.apache.gigo</groupId>
+    <artifactId>metric-collector</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Metric Store Collector</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.gigo</groupId>
+            <artifactId>metric-publisher</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
+
