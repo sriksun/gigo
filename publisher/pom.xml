@@ -28,7 +28,29 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.5.8</version>
         </dependency>
-
     </dependencies>
+
+    <build>
+         <plugins>
+             <plugin>
+                 <groupId>org.apache.thrift.tools</groupId>
+                 <artifactId>maven-thrift-plugin</artifactId>
+                 <version>0.1.10</version>
+                 <configuration>
+                     <thriftExecutable>/usr/local/bin/thrift</thriftExecutable>
+                 </configuration>
+                 <executions>
+                     <execution>
+                         <goals>
+                             <goal>compile</goal>
+                             <goal>testCompile</goal>
+                         </goals>
+                     </execution>
+                 </executions>
+             </plugin>
+
+         </plugins>
+     </build>
+
 </project>
 

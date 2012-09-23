@@ -16,11 +16,35 @@
 
     <name>Metric Store Collector</name>
 
+    <repositories>
+        <repository>
+            <id>InMobiReleaseRepository</id>
+            <name>InMobi Internal Repository</name>
+            <url>http://build.corp.inmobi.com/nexus/content/repositories/releases</url>
+        </repository>
+        <repository>
+            <id>InMobiThirdpartyRepository</id>
+            <name>InMobi Internal Repository</name>
+            <url>http://build.corp.inmobi.com/nexus/content/repositories/thirdparty</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.gigo</groupId>
             <artifactId>metric-publisher</artifactId>
             <version>0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inmobi.messaging</groupId>
+            <artifactId>messaging-client-core</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inmobi.messaging</groupId>
+            <artifactId>messaging-client-databus</artifactId>
+            <scope>runtime</scope>
+            <version>1.3.0</version>
         </dependency>
     </dependencies>
 

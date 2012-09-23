@@ -1,4 +1,4 @@
-namespace java org.apache.gigo.types
+namespace java org.inmobi.gigo.types
 enum Origin
 {
   PUBLISHER=1,
